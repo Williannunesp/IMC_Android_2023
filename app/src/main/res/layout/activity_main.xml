@@ -27,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="Digite seu peso: "
         android:textSize="20sp"
         android:textStyle="bold"
@@ -55,13 +55,14 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/btnCalcular"
+        android:id="@+id/btn_Calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
         android:backgroundTint="@color/blue"
         android:text="Calcular"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -70,7 +71,7 @@
         app:layout_constraintVertical_bias="0.119" />
 
     <Button
-        android:id="@+id/btnLimpar"
+        android:id="@+id/btn_Limpar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -79,19 +80,20 @@
         android:clickable="true"
         android:enabled="false"
         android:text="Limpar"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.99"
-        app:layout_constraintStart_toEndOf="@+id/btnCalcular"
+        app:layout_constraintStart_toEndOf="@+id/btn_Calcular"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.117" />
 
     <EditText
-        android:id="@+id/txtPeso"
+        android:id="@+id/edt_Peso"
         android:layout_width="71dp"
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="5dp"
         android:ems="10"
         android:inputType="numberDecimal"
@@ -107,19 +109,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:text="Kg."
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/txtPeso"
+        app:layout_constraintStart_toEndOf="@+id/edt_Peso"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/txtAltura"
+        android:id="@+id/edt_Altura"
         android:layout_width="71dp"
         android:layout_height="40dp"
         android:layout_marginStart="10dp"
@@ -129,7 +131,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/txtPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_Peso" />
 
     <TextView
         android:id="@+id/textView5"
@@ -141,43 +143,40 @@
         android:text="Mts."
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
-        app:layout_constraintStart_toEndOf="@+id/txtAltura"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Calcular"
+        app:layout_constraintStart_toEndOf="@+id/edt_Altura"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.625" />
 
     <TextView
-        android:id="@+id/txtResult"
+        android:id="@+id/txt_Result"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="140dp"
-        android:layout_marginEnd="50dp"
-        android:textSize="16sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
-        app:layout_constraintVertical_bias="0.204" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_Imc"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/txtImc"
+        android:id="@+id/txt_Imc"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="121dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
         android:editable="true"
-        android:textSize="16sp"
+        android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtResult"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalcular"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Calcular" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
